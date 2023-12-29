@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="loginPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelMangement.controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="2.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../hibernate%20coursework/src/main/resources/view/image/Frame%201.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="172.0" layoutY="21.0" text="HOSTEL MANAGEMENT">
+               <font>
+                  <Font name="Elephant" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="138.0" layoutY="108.0" opacity="0.25" prefHeight="285.0" prefWidth="325.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-border-radius: 25;">
+               <children>
+                  <Text layoutX="58.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name  :">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtUserName" layoutX="41.0" layoutY="109.0" prefHeight="25.0" prefWidth="210.0" style="-fx-border-color: gray; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                  <Text layoutX="58.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password  :">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="txtPass" layoutX="41.0" layoutY="179.0" prefHeight="25.0" prefWidth="210.0" style="-fx-border-color: gray; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                  <ToggleButton fx:id="btnShow" layoutX="257.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnShowOnAction" prefHeight="25.0" prefWidth="54.0" text="SHOW" />
+                  <Label fx:id="shownPass" layoutX="53.0" layoutY="206.0" text="Shown Password" />
+                  <Label fx:id="msgLbl" layoutX="149.0" layoutY="43.0" prefHeight="17.0" prefWidth="0.0" />
+                  <Button fx:id="btnLogin" layoutX="130.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnLoginOnActionx" style="-fx-background-color: black;" text="LOGIN" textFill="#fffefe">
+                     <font>
+                        <Font name="Elephant" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="88.0" fitWidth="79.0" layoutX="261.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../hibernate%20coursework/src/main/resources/view/image/icons8-user-64%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
