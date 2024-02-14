@@ -33,7 +33,7 @@ public class HomePageController {
         Scene scene=new Scene(anchorPane);
         Stage stage=(Stage)homepagePane.getScene().getWindow();
         stage.setScene(scene);
-        stage.setTitle("User Management");
+        stage.setTitle("Reservation Management");
         stage.centerOnScreen();
 
     }
