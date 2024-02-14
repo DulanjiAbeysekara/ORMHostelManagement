@@ -1,4 +1,6 @@
 package lk.ijse.hostelMangement.dao.custom.impl;
 
-public class UserDAOImpl {
+import lk.ijse.hostelMangement.dao.custom.UserDAO;
+
+public class UserDAOImpl implements UserDAO {
 }

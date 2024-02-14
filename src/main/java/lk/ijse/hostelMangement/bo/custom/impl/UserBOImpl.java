@@ -7,5 +7,5 @@ import org.hibernate.Session;
 
 public class UserBOImpl implements UserBO {
         private Session session;
-        UserDAO userDAO=(UserDAO) DAOFactory.getDaoFactory.getDAO(DAOFactory.DAOTypes.USER);
+        UserDAO userDAO=(UserDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.USER);
 }
